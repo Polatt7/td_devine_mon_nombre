@@ -40,7 +40,7 @@ TIP: Le nom d'un _crate_ respecte la notation https://doc.rust-lang.org/1.0.0/st
 +
 .Quelles commandes avez-vous tapées ?
 ....
-🡆 Répondre ici 🡄
+🡆 rustc devine_mon_nombre.rs 🡄
 ....
 +
 NOTE: Le message `Hello world!` doit apparaître à l'écran.
@@ -48,7 +48,7 @@ NOTE: Le message `Hello world!` doit apparaître à l'écran.
 +
 .Quelles commandes avez-vous tapées ?
 ....
-🡆 Répondre ici 🡄
+🡆 git add src && git commit -m "mon message" && git push 🡄
 ....
 
 === Lire un nombre
@@ -74,12 +74,12 @@ NOTE: Inspirez-vous de l'exemple fourni dans la https://doc.rust-lang.org/std/io
 .. Que signifie la notation `&mut` devant le nom de la variable dans l'appel à `read_line` ?
 +
 ....
-🡆 Répondre ici 🡄
+🡆 &mut permet à read_line de modifier la variable input pour y mettre la saisie de l’utilisateur. 🡄
 ....
 .. Quel est le type de retour de `read_line` ? Quel est son utilité ?
 +
 ....
-🡆 Répondre ici 🡄
+🡆 Result<usize> indique si la lecture a réussi ou échoué, et le usize correspond au nombre d’octets lus. 🡄
 ....
 .. Utilisez la méthode https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap[`unwrap`] pour désencapsuler la chaîne saisie.
 .. Affichez le nombre saisi à l'écran.
@@ -97,7 +97,7 @@ Pour utiliser ce crate, nous allons faire appel à Cargo pour gérer la dépenda
 Quels fichiers et répertoires ont été générés par cette commande ?
 +
 ....
-🡆 Répondre ici 🡄
+🡆 cargo init a créé Cargo.toml, .gitignore et src/main.rs. 🡄
 ....
 .. Déplacez `devine_mon_nombre.rs` vers `src/main.rs` en utilisant https://git-scm.com/docs/git-mv[`git mv`].
 .. Exécutez votre programme avec https://doc.rust-lang.org/cargo/commands/cargo-run.html[`cargo run`].
